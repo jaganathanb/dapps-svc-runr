@@ -1,0 +1,18 @@
+{
+	"Name": "dapps_webapi",
+	"DisplayName": "DApps WebApi",
+	"Description": "Enables DApps WebUI to get data for GSTs",
+	
+	"Dir": "${Deploy:RootFolder}",
+	"Exec": "C:\\windows\\system32\\cmd.exe",
+	"Args": ["/C","${Deploy:RootFolder}\\DApps.WebApi.exe"],
+	"Env": [
+		"JWT_SECRET=MyDA99$Secr3t",
+		"APP_ENV=release",
+		"SERVER_USERNAME=${Deploy:Username}",
+		"SERVER_PASSWORD=${Deploy:Password}"
+	],
+	
+	"Stderr": "C:\\dev\\dapps_webapi_err.log",
+	"Stdout": "C:\\dev\\dapps_webapi_out.log"
+}

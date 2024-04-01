@@ -1,0 +1,16 @@
+
+{
+	"Name": "dapps_webui",
+	"DisplayName": "DApps WebUI",
+	"Description": "Serves DApps UI for GSTs",
+	
+	"Dir": "C:\\Projects\\Go\\dapps-web-server",
+	"Exec": "C:\\windows\\system32\\cmd.exe",
+	"Args": ["/C","C:\\Projects\\Go\\dapps-web-server\\DApps.Web.Server.exe"],
+	"Env": [
+		"APP_ENV=development"
+	],
+	
+	"Stderr": "C:\\dev\\dapps_web_server_err.log",
+	"Stdout": "C:\\dev\\dapps_web_server_out.log"
+}
