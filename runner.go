@@ -131,7 +131,7 @@ func getConfig(path string) (*Config, error) {
 }
 
 func main() {
-	actionFlag := flag.String("action", "", "Action to control the system service.")
+	actionFlag := flag.String("control", "", "Action to control the system service.")
 	flag.Parse()
 
 	configPath, err := getConfigPath()
@@ -179,6 +179,10 @@ func main() {
 			}
 		}
 	}()
+
+	if len(*actionFlag) == 0 && len(os.Args) > 1 {
+		*actionFlag = os.Args[1]
+	}
 
 	if len(*actionFlag) != 0 {
 		err := service.Control(s, *actionFlag)
