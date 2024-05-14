@@ -2,9 +2,14 @@
   "RT_GROUP_ICON": {
     "APP": {
       "0000": [
-        "icon.png",
-        "icon16.png"
+        "DhuruvahApps-16_x_16.png",
+        "DhuruvahApps-32_x_32.png",
+        "DhuruvahApps-48_x_48.png",
+        "DhuruvahApps-64_x_64.png"
       ]
+    },
+    "OTHER": {
+      "0000": "DhuruvahApps-256_x_256.png"
     }
   },
   "RT_MANIFEST": {
